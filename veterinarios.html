@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Implantes veterinarios hechos a medida para tratamientos efectivos."/>
+  <title>Veterinarios - Meraky</title>
+  <link rel="icon" href="/favicon.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+</head>
+<body>
+
+      <header class="header-azul">
+      <div class="header-content">
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li class="has-submenu">
+          <a href="#">Soluciones</a>
+          <ul class="submenu">
+            <li><a href="consultoria.html">Consultoría y capacitación</a></li>
+            <li><a href="materiales.html">Materiales</a></li>
+          </ul>
+        </li>
+        <li><a href="sobre-nosotros.html">Nosotros</a></li>
+        <li><a href="index.html#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="logo-right">
+      <img loading="lazy" src="img/LOGO_MERAKY.png" alt="Logo Meraky" />
+    </div>
+  </div>
+</header>
+
+  <main>
+    <h1>Implantes veterinarios personalizados</h1>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 30px; align-items: flex-start; justify-content: center;">
+      <div style="flex: 1; min-width: 300px; max-width: 500px;">
+        <img loading="lazy" src="img/implante_veterinario.png" alt="Implante veterinario" style="width: 100%; border-radius: 10px;" />
+      </div>
+      <div style="flex: 1; min-width: 300px;">
+        <p>
+          En Meraky también desarrollamos soluciones a la medida para nuestros compañeros animales.
+          Hemos trabajado con clínicas veterinarias especializadas para diseñar implantes personalizados
+          para perros y gatos en casos de trauma, tumoraciones o malformaciones óseas.
+        </p>
+        <div class="materiales-contenedor">
+  <div class="grupo-material">
+    <h4>Materiales Bioinertes</h4>
+    <ul>
+      <li>PEEK</li>
+      <li>PMMA con gentamicina</li>
+      <li>PEEK + CF</li>
+    </ul>
+  </div>
+  <div class="grupo-material">
+    <h4>Materiales Bioactivos</h4>
+    <ul>
+      <li>PEEK + HA</li>
+      <li>PMMA + HA</li>
+    </ul>
+  </div>
+</div>
+      </div>
+    </div>
+
+    <h2 style="margin-top: 50px;">Casos clínicos a la medida</h2>
+    <div class="swiper mySwiper" style="margin-top: 20px; max-width: 600px; margin-inline: auto;">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img loading="lazy" src="img/caso_vet1.jpg" alt="Caso veterinario 1"></div>
+        <div class="swiper-slide"><img loading="lazy" src="img/caso_vet2.jpg" alt="Caso veterinario 2"></div>
+        <div class="swiper-slide"><img loading="lazy" src="img/caso_vet3.jpg" alt="Caso veterinario 3"></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </main>
+  <!-- Navegación lateral -->
+  <div class="servicios-nav">
+    <a href="maxilofaciales.html" class="nav-arrow left" aria-label="Ir a Maxilofaciales" data-tooltip="Ir a Maxilofaciales">&#10094;</a>
+    <a href="ortopedia.html" class="nav-arrow right" aria-label="Ir a Ortopedia" data-tooltip="Ir a Ortopedia">&#10095;</a>
+  </div>
+  <!-- Fin navegación lateral -->
+
+  <footer>
+    <div class="footer-content">
+      <img loading="lazy" src="img/LOGO_MERAKY.png" alt="Logo Meraky" class="footer-logo" />
+      <p>© <span id="anio"></span> Meraky. Todos los derechos reservados.</p>
+      <div class="footer-icons">
+        <a href="https://maps.app.goo.gl/mAawoEfUnV61vtST7" target="_blank"><img loading="lazy" src="img/facebook-icon.png" alt="Ubicación" /></a>
+        <a href="https://www.instagram.com/meraky62018" target="_blank"><img loading="lazy" src="img/instagram-icon.png" alt="Instagram" /></a>
+        <a href="https://wa.me/573155227453" target="_blank"><img loading="lazy" src="img/whatsapp-icon.png" alt="WhatsApp" /></a>
+      </div>
+      <p><a href="index.html">Inicio</a> | <a href="index.html#contacto">Contáctanos</a></p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".mySwiper", {
+      loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+<script src="js/main.js"></script>
+</body>
+</html>
